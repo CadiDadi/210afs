@@ -64,4 +64,4 @@ def merge(nlist,lefthalf,righthalf):
 
 mergeList = [ 55 ,  31 ,  26 ,  20 ,  63 ,  7 ,  51 ,  74 ,  81 ,  40 ]
 mergeSort(mergeList)
-print(mergeList)
+print("Sorted mergeList:", mergeList)
