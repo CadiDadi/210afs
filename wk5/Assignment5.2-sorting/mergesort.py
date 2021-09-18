@@ -1,6 +1,6 @@
 # Getting Started
     # In your Week 5 folder, create a folder called ‘sorting’ for this assignment.
-    # Download the mergesort.py  Download mergesort.pyfile
+    # Download the mergesort.py
     # Complete the code for the mergeSort function to sort a list of elements using the merge sort algorithm.
     # At each stage, print the status of the list as it is split and merged.
     # Print the final list of elements in sorted order.
@@ -64,4 +64,4 @@ def merge(nlist,lefthalf,righthalf):
 
 mergeList = [ 55 ,  31 ,  26 ,  20 ,  63 ,  7 ,  51 ,  74 ,  81 ,  40 ]
 mergeSort(mergeList)
-print("Sorted mergeList:", mergeList)
+print("Sorted mergeList:",mergeList)

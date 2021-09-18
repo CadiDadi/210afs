@@ -24,5 +24,13 @@
 #     [81, 7, 26, 51, 63, 55, 40, 31, 74, 20]
 #     [40, 26, 63, 31, 7, 51, 20, 81, 55, 74]
 
+##########################
 
+# trying out the builtin shuffle function, which uses the Fisher-Yates shuffle algorithm, w/ time complexity: O(n)
 
+import random
+
+shuffleList = [7, 20, 26, 31, 40, 51, 55, 63, 74, 81]
+print("Before shuffled: ",shuffleList)
+random.shuffle(shuffleList)
+print("After shuffled: ",shuffleList)

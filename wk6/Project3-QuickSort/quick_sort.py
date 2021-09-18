@@ -1,3 +1,5 @@
+# SCRIMBA EXPLANATION: https://scrimba.com/scrim/cE6e8PTE
+
 # Getting Started:
 
 # In your Week 6 folder, download the file called ‘quick-sort.py’ for this assignment.
