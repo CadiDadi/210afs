@@ -17,7 +17,6 @@
 
 # The execution time is: 0.004999876022338867
 
-### start of downloaded code from file: quick-sort.py ###################
 import time
 import random
 
@@ -28,12 +27,32 @@ def quick_sort(a_list, start, end):
 
     # Call the partition helper function to split the list into two section 
     # divided between a pivot point
-    pivot = partitionStart(a_list, start, end)
+
+# Alternatives
+    # pivot = partitionStart(a_list, start, end)
+    # pivot = partitionSecond(a_list, start, end)
+    # pivot = partitionMiddle(a_list, start, end)
+    pivot = partitionEnd(a_list, start, end)
+
     quick_sort(a_list, start, pivot-1)
     quick_sort(a_list, pivot+1, end)
         
-
 def partitionStart(a_list, start, end):
+    return partition(a_list, start, end)
+
+def partitionSecond(a_list, start, end):
+    if start < end:
+        a_list[start], a_list[start+1] = a_list[start+1], a_list[start]
+    return partition(a_list, start, end)
+
+def partitionMiddle(a_list, start, end):
+    if start < end:
+        a_list[start], a_list[(start+end)//2] = a_list[(start+end)//2], a_list[end]
+    return partition(a_list, start, end)
+
+def partitionEnd(a_list, start, end):
+    if start < end:
+        a_list[start], a_list[end] = a_list[end], a_list[start]
     return partition(a_list, start, end)
 
 def partition(a_list, start, end):
@@ -88,4 +107,3 @@ end_time = time.time()
 
 print(f"The execution time is: {end_time-start_time}")
 
-### end of downloaded code from quick-sort.py ###################
